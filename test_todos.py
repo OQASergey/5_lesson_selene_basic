@@ -15,3 +15,8 @@ def test_type_todo():
 
 def test_complite():
     browser.all('[id="todo-list"]>li').should(have.size(3))
+    browser.all('[id="todo-list"]>li').element_by(have.exact_texts('a', 'b'))
+
+
+#def test_delete():
+#    browser.all('[id="new-todo"]>li').element_by(have.exact_text('c')).element('.toggle').click()
