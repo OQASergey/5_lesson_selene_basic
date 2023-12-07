@@ -10,4 +10,6 @@ def browser_management():
     yield
 
     browser.quit()
-    print('Браузер открыт')
+    print('')
+    print('Браузер закрыт')
+    print('**Завершение тестирования**')
